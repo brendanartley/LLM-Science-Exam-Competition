@@ -1,6 +1,6 @@
 ## LLM Science Exam Competition
 
-This repository contains code for the ??? place solution in the [Kaggle - LLM Science Exam competition](https://www.kaggle.com/competitions/kaggle-llm-science-exam) on Kaggle. The complete solution write-up is [here](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/446229).
+This repository contains code for the 191st place solution in the [Kaggle - LLM Science Exam competition](https://www.kaggle.com/competitions/kaggle-llm-science-exam) on Kaggle. The complete solution write-up is [here](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/446229).
 
 <h1 align="center">
 <img src="./imgs/question_format.png" alt="Model Architecture" width="1000">
@@ -16,10 +16,15 @@ Retrieval/Reranking
 
 LLM
 - Should have experimented with a larger LLM using PEFT (7-13 billion params)
+  - 1st place solution suggests that LLM w/ LORA fine tune would have boosted score by (~0.01) and gotten me into top 50!
 - Should have ensembled diverse models here
+- Can speed up inference by caching context for decoder only models?
+  - comment [here](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/446240#2476830), Example [here](https://www.kaggle.com/code/simjeg/platypus2-70b-with-wikipedia-rag?scriptVersionId=145471658&cellId=11)
+
 
 CV
-- Focus on setting up a correlated CV early in the competition
+- Should have focused on setting up a correlated CV early in the competition
+- Should have used a validation set more representative of competition LB/PB
 
 ## Other Attempts
 
